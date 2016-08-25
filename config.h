@@ -14,7 +14,9 @@ static unsigned int update_interval = 1;
 /* text to show if no value can be retrieved */
 static const char unknowntext[] = "n/a";
 
+/* wondering if this will help change icon size, looks like it doesn't */
 static const char fonts[]= "Siji:size=12";
+
 
 /* statusbar
 - battery_perc (battery percentage) [argument: battery name]
@@ -43,7 +45,7 @@ static const char fonts[]= "Siji:size=12";
 - wifi_essid (wifi essid) [argument: wifi card interface name] */
 static const struct arg args[] = {
 	/* function     format          argument */
-	{ cpu_perc,     "\uE022 %s    ",     NULL },
+	{ cpu_perc,     " \uE022 %s    ",     NULL },
 	{ temp,         "%s                  ",       "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input" },
 	{ datetime,     "%s                                                                                                                                             ",           "%a-%d-%b %I:%M %p" },
 	{ wifi_perc,    "\uE048 %s    ",  "wlan0" },
