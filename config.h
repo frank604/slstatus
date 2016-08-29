@@ -45,7 +45,7 @@ static const char fonts[]= "Siji:size=12";
 - wifi_essid (wifi essid) [argument: wifi card interface name] */
 static const struct arg args[] = {
 	/* function     format          argument */
-	{ cpu_perc,     " \uE022 %s    ",     NULL },
+	{ cpu_perc,     "%s  ",     NULL },
 	{ temp,         "%s                  ",       "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input" },
 	{ datetime,     "%s                                                                                                                                             ",           "%a-%d-%b %I:%M %p" },
 	{ wifi_perc,    "\uE048 %s    ",  "wlan0" },
