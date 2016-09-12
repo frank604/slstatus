@@ -46,8 +46,8 @@ static const char fonts[]= "Siji:size=12";
 static const struct arg args[] = {
 	/* function     format          argument */
 	{ cpu_perc,     "%s  ",     NULL },
-	{ temp,         "%s                  ",       "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input" },
-	{ datetime,     "%s                                                                                                                                             ",           "%a-%d-%b %I:%M %p" },
+	{ temp,         "%s                   ",       "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input" },
+	{ datetime,                  "%s                                                                                                                                  ",           "%a-%d-%b %I:%M %p" },
 	{ wifi_perc,    "\uE048 %s    ",  "wlan0" },
 	{ ram_perc,     "\uE021 %s    ",   NULL },
 	{ vol_perc,     "\uE050 %s    ",   "default" },
